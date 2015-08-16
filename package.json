@@ -1,6 +1,6 @@
 {
-    "name": "Brackets-Image-Convert",
-    "title": "Convert images using Imagemagick inside brackets",
+    "name": "brackets-image-convert",
+    "title": "Brackets Image Convert",
     "description": "A brackets extension which provides a wizard like interface to convert images using Imagemagick",
     "homepage": "https://github.com/hussainb/Brackets-Image-Convert",
     "version": "1.0.0",
