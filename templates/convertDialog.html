@@ -1,0 +1,105 @@
+<div id="brackets-image-convert" class="template modal">
+	<div class="modal-header">
+		<h1 class="dialog-title">Image Converter</h1>
+	</div>
+	<div class="modal-body">
+		<div class="convert-wrap">
+			<ul class="convert-tabs">
+				<li class="convert-active" data-tab="#convert-wizard">
+					Wizard
+				</li>
+				<li data-tab="#convert-advanced">
+					Advanced
+				</li>
+				<li data-tab="#convert-log">
+					Log
+				</li>
+				<li class="convert-pull-right" data-tab="#convert-settings">
+					Settings
+				</li>
+			</ul>
+			<div class="convert-tab-panel" id="convert-log">
+				<small><i>Note: Do not click on the partially generated image in the project panel while the conversion is in progress.</i></small>
+				<ul id="convert-logStatus" class="convert-logStatus">
+					
+				</ul>
+			</div>
+			<div class="convert-tab-panel" id="convert-settings">
+				<form name="convert-settingsForm" id="convert-settingsForm" class="convert-form">
+					
+						<p>This extension requires <a href="http://www.imagemagick.org">image magick<a/> installed on your pc. download 
+						<a href="http://www.imagemagick.org/script/binary-releases.php">here</a>. </p>
+						<p> If its already installed, set the imagemagick installation folder path below:</p>
+					<div>
+						
+						<input name="imgMagickPath" type="text" />
+						<button type="submit" name="submit" class="dialog-button btn primary" data-button-id="settings">Save</button>
+					</div>
+					
+				</form>
+			</div>
+			<div class="convert-tab-panel convert-active" id="convert-wizard">
+				<form name="convert-wizardForm" id="convert-wizardForm" class="convert-form">
+					<div>
+						<label class="convert-control-label">Input:</label>
+						<p> <label class="convert-selectedFileName"></label> </p>
+					</div>
+					<div>
+						<label class="convert-control-label">Resize:</label>
+						<p> <input name="width" class="convert-input-small" placeholder="w" type="text"/>
+						<label>X</label>
+						<input name="height" class="convert-input-small" placeholder="h" type="text"/> </p>
+					</div>
+					<div>
+						<label class="convert-control-label">Quality:</label>
+						<p> <input name="quality" class="convert-input-small" placeholder="output quality" type="text"/></p>
+					</div>
+					<div>
+						<label class="convert-control-label">Transparency:</label>
+						<p> <input name="transColor" class="convert-input-small" placeholder="hex/rgb" type="text"/>
+						<input name="transFuzz" class="convert-input-small" placeholder="fuzz" type="text"/> </p>
+					</div>
+					<div>
+						<label class="convert-control-label">Output*:</label>
+						<p> <input required name="outFile" class="convert-input-medium" placeholder="out file name" type="text"/></p>
+					</div>
+					<div>
+						<label class="convert-control-label"> &nbsp;</label>
+						<p><button type="submit" name="submit" class="dialog-button btn primary" data-button-id="convert">Convert</button></p>
+					</div>					
+				</form>
+			</div>
+			
+			<div class="convert-tab-panel" id="convert-advanced">
+				<form name="convert-advancedForm" id="convert-advancedForm" class="convert-form">
+					<div>
+						<label class="convert-control-label">Input:</label>
+						<p> <label class="convert-selectedFileName"></label> </p>
+					</div>
+					<div>
+						<label class="convert-control-label">cmd:</label>
+						<p><textarea name="advancedCmd" class="convert-input-large" placeholder="-resize 100x -background transparent"></textarea></p>
+					</div>
+					<div>
+						<label class="convert-control-label">Output*:</label>
+						<p> <input required name="advOutFile" class="convert-input-medium" placeholder="Out file name" type="text"/></p>
+					</div>
+					<div>
+						<label class="convert-control-label"></label>
+						<p><button type="submit" class="dialog-button btn primary" data-button-id="execute">Execute</button></p>
+					</div>
+				</form>
+				<h5>Previous commands</h5>
+				<div class="convert-prev-cmd-wrap">
+					<ul class="convert-commands-list" id="convert-commands-list">
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<div class="modal-footer">
+		<!-- <button class="dialog-button btn primary" id="prefs_save_btn" data-button-id="save">Save</button> -->
+		<button id="convert-closeModal" class="dialog-button btn" data-button-id="close">Close</button>
+	</div>
+</div>

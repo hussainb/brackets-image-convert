@@ -1,0 +1,23 @@
+{
+    "name": "Brackets-Image-Convert",
+    "title": "Image Convert",
+    "description": "An extension which provides a wizard like interface to convert images using Imagemagick",
+    "homepage": "https://github.com/hussainb/Brackets-Image-Convert",
+    "version": "1.0.0",
+    "author": "Hussainb <hussain.bharmal@outlook.com>",
+    "license": "MIT",
+    "categories": "external",
+    "keywords": [
+        "imagemagick",
+		"convert",
+		"image",
+		"manipulate"
+    ],
+    "files": [
+        "main.js",
+        "README.md"
+    ],
+    "engines": {
+        "brackets": ">=0.37.0"
+    }
+}

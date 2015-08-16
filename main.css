@@ -1,0 +1,164 @@
+#brackets-image-convert{
+	
+}
+
+#brackets-image-convert .convert-wrap{
+	min-height:390px
+}
+
+#brackets-image-convert .convert-tabs{
+	margin:0;
+	list-style: none;
+	padding-left:10px;
+	border-bottom:1px solid lightgray;
+}
+
+#brackets-image-convert .convert-tabs li{
+	margin-right:5px;
+	margin-bottom: -1px;
+	display:inline-block;
+	min-width:65px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+}
+
+#brackets-image-convert .convert-tabs li a{
+	outline:none;
+	display:inline-block;
+	width:100%;
+	text-decoration:none;
+	color:inherit;
+}
+
+#brackets-image-convert .convert-tabs li a:focus{
+	box-shadow: none;
+}
+
+#brackets-image-convert .convert-tabs li.convert-pull-right{
+	float:right;
+}
+
+
+#brackets-image-convert .convert-tabs li.convert-active{
+	border-bottom: 2px solid gray
+}
+
+#brackets-image-convert .convert-tab-panel{
+	display:none;
+	padding-top:10px;
+	max-height:370px;
+	overflow:auto;
+}
+
+#brackets-image-convert .convert-tab-panel.convert-active{
+	display:block;
+}
+
+#brackets-image-convert .convert-form div{
+	margin-top:10px;
+/* 	height:30px;
+	line-height:30px; */
+}
+
+#brackets-image-convert  .convert-form p{
+	margin:0;
+	line-height:100%;
+	display:inline-block;
+	font-size:14px;
+}
+
+#brackets-image-convert  .convert-form label{
+	display:inline-block;
+	margin:0;
+	cursor: default;
+}
+
+#brackets-image-convert  .convert-form input{
+	margin:0;
+}
+
+#brackets-image-convert .convert-control-label{
+	display:inline-block;
+	margin:0;
+	line-height:100%;
+	min-width:100px;
+	font-weight:bold;
+}
+
+#brackets-image-convert .convert-input-small{
+	width: 120px;
+}
+
+#brackets-image-convert .convert-input-medium{
+	width: 256px;
+}
+#brackets-image-convert .convert-input-large{
+	width: 400px;
+}
+
+#brackets-image-convert .convert-commands-list{
+	margin:0;
+	list-style: none;
+	border:1px solid lightgray;
+	-webkit-user-select: initial;
+	cursor:text;
+}
+
+#brackets-image-convert .convert-commands-list li{
+	margin:0;
+	position:relative;
+	padding:5px;
+	border-top:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+	background-color:white;
+	line-height:20px;
+}
+
+#brackets-image-convert .convert-commands-list li p{
+	margin:0
+}
+
+#brackets-image-convert .convert-commands-list li span{
+	position:absolute;
+	bottom:-5px;
+	right:5px;
+	font-size:10px;
+}
+
+#brackets-image-convert .convert-commands-list li span a{
+	cursor:pointer;
+}
+
+#brackets-image-convert .convert-logStatus{
+	list-style:none;
+	margin:0;
+	max-height:350px;
+	overflow:auto;
+}
+
+#brackets-image-convert .convert-logStatus li{
+	margin:0;
+	padding:5px;
+	background-color:white;
+	border:1px solid gray;
+	border-bottom:none;
+}
+
+#brackets-image-convert .convert-logStatus li:last-child {
+    border-bottom:1px solid gray;
+}
+
+#brackets-image-convert .convert-logStatus li b{
+	font-weight:bold;
+	display:block;
+}
+
+.convert-prev-cmd-wrap{
+	height:135px;
+	overflow:auto;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
