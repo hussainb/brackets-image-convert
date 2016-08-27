@@ -28,7 +28,9 @@ This extension requires Imagemagick to be installed on your system and its insta
 MIT-licensed.
 
 ### Compatibility
-Tested on Brackets 1.4 Windows 7.
+Tested on Brackets 1.4 to 1.7 on Windows 7 and windows 8.
 
 ### Change Log
+v1.0.2 - Bug fixes, UI cleanup, usage reports.
+v1.0.1 - Maintainance release.
 v1.0.0 - Initial release.
