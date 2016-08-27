@@ -10,8 +10,9 @@ This extension requires Imagemagick to be installed on your system and its insta
 1. Select **File > Extension Manager...**
 2. Search for this extension.
 3. Click on the **Install** button.
-4. Right click on an image in the project view and select "Convert" from the context menu.
-5. If the extension finds imagemagick installed you should be able to see a form with a few fields,
+4. <b>Please RESTART BRACKETS after installation to enable the extension</b>
+5. Right click on an image in the project view and select "Convert" from the context menu.
+6. If the extension finds imagemagick installed you should be able to see a form with a few fields,
    else you may see a notification asking to download/specify path of imagemagick.
 
 ### How to Use Extension
@@ -31,6 +32,6 @@ MIT-licensed.
 Tested on Brackets 1.4 to 1.7 on Windows 7 and windows 8.
 
 ### Change Log
-v1.0.2 - Bug fixes, UI cleanup, usage reports.
-v1.0.1 - Maintainance release.
+v1.0.2 - Bug fixes, UI cleanup, usage reports. </br>
+v1.0.1 - Maintainance release. </br>
 v1.0.0 - Initial release.
